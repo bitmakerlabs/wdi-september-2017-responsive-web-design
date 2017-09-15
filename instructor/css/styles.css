@@ -49,3 +49,103 @@ body {
 /*
  Write *YOUR* styles here!
 */
+html {
+	font-family: Arial, sans-serif;
+	font-size: 62.5%; /* 10px / 16px = 0.625 (62.5%) */
+	line-height: 1.5;
+	background: #eee;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	color: purple;
+	text-decoration: none;
+}
+
+p {
+	font-family: Georgia, serif;
+}
+
+.brand-supporting,
+.intro {
+	display: none;
+}
+
+/* HEADER STYLES */
+header {
+	text-align: center;
+}
+
+.brand {
+	color: purple;
+}
+
+/* POST STYLES */
+.post {
+	font-size: 4vw;
+	margin-bottom: 4rem;
+	border-bottom: solid 0.1rem #BBB;
+	background: #fff;
+}
+
+.post div {
+	padding: 2rem;
+}
+
+.post h2 {
+	font-size: 2em;
+}
+
+.post h3 {
+	font-size: 0.75em;
+}
+
+.post p {
+	font-size: 1em;
+}
+
+/* MEDIA QUERIES */
+/* TABLET STYLES */
+@media ( min-width: 600px ) {
+	header {
+		text-align: left;
+		padding: 0 2rem;
+	}
+
+	.brand {
+		font-size: 2rem;
+	}
+
+	.brand-main {
+		font-size: 1em;
+	}
+
+	.brand-supporting {
+		color: #999;
+		display: inline-block;
+		font-size: 0.75em;
+	}
+
+	.post-wrapper {
+		max-width: 94%;
+		margin: 0 auto;
+	}
+
+	.post {
+		width: 48%;
+		float: left;
+		font-size: 1.5rem;
+	}
+
+	.post:nth-child( 2n ) {
+		margin-left: 4%;
+	}
+}
+
+/* DESKTOP STYLES */
+@media ( min-width: 960px ) {
+	/* TODO */
+}
